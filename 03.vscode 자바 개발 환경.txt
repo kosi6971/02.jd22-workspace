@@ -11,3 +11,14 @@
 - 기본자바파일은 내부 클래스명과 동일한 파일명을 쓴다
 - 클래스는 반드시 대문자로 시작
 - 따라서 파일명도 대문자로 클래스명과 동일하게 작성
+- Java Run | Debug 버튼 클릭 > 컴파일
+- 자바 실행 단축키 : ctrl+F5
+- 지바 디버깅 단축키 : F5
+- bin폴더가 없다면 만들어주면서 class파일이 생긴다
+- 결과는 터미널창에 출력(기본적으로 터미널 창은 control+`)
+
+[ 처음 자바 실행 시 inlay Hints가 적용되어서 앞에 x:표시가 뜬다 ] -> 제거
+1) F1 누르고 json파일 검색 > 기본 설정 json 파일 선택(defaultSetting.json)(수정 불가)
+   > ctrl + F로 inlay 검색 > "editor.inlayHints.enabled": "on" 복사
+2) F1을 누르고 json 검색 > 사용자 설정 검색(settings.json) > inlay를 검색
+   > "editor.inlayHints.enabled": "off"를 넣기
