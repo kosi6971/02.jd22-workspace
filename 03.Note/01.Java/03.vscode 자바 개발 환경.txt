@@ -22,3 +22,14 @@
    > ctrl + F로 inlay 검색 > "editor.inlayHints.enabled": "on" 복사
 2) F1을 누르고 json 검색 > 사용자 설정 검색(settings.json) > inlay를 검색
    > "editor.inlayHints.enabled": "off"를 넣기
+
+[ 자바 class경로 지정 환경 설정 ]
+1. F1 누르고 java config > JAVA Configure Classpath 선택
+2. class경로 지정 페이지 확인
+   - Sources > Path 아니면 X를 누르고 지운 후 add로 추가
+   - Output > Class를 생성하여 출력하는 곳 지정 Browse를 클릭
+(주의 : 경로는 프로젝트 루트로부터 잡히는 경로이므로 만약 루트가 바뀌면 다시 설정 필요)
+-> 루트는 최상위 폴더 의미
+
+[ 일반적으로 뭔가 로딩이 안될 때 ]
+-> 모든 vscode를 닫았다가 연다
