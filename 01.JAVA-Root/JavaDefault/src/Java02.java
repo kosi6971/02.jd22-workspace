@@ -1,4 +1,7 @@
 public class Java02 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println("자바 변수");
 
@@ -122,6 +125,31 @@ public class Java02 {
         double d1 = 12e4d;
         System.out.println("거듭제곱 :\n"+f1+"\n"+d1);
 
+        System.out.println("[ 불린값 출력 ]");
+        // 불린값(true / false)
+        boolean isJavaFun = true;
+        boolean isFishTasty = false;
+        System.out.println(isJavaFun);
+        System.out.println(isJavaFun?"kosi":"kr.sil");
+        System.out.println(isFishTasty);
+        System.out.println(isFishTasty?"kosi":"kr.sil");
+
+        // char 데이터 유형
+        // 문자는 ''사용 필수
+        System.out.println("[ char값 출력 ]");
+        char myGrade = 'K';
+        System.out.println(myGrade);
+        // 한글 같은 2byte 문자도 한글자 씩 출력
+        char myMedal = '상';
+        System.out.println(myMedal);
+
+        // 아스키코드를 이용한 출력
+        // char형에 아스키코드에 해당하는 숫자를 넣으면 한글자 출력
+        // 참조 : https://www.w3schools.com/charsets/ref_html_ascii.asp
+        char myVar1 = 64, myVar2 = 66, myVar3 = 67;
+        System.out.println("아스키 64 : "+myVar1);
+        System.out.println("아스키 66 : "+myVar2);
+        System.out.println("아스키 67 : "+myVar3);
 
         /*
         [ 기본이 아닌 데이터 유형 ]
@@ -143,5 +171,35 @@ public class Java02 {
 
         기본이 아닌 유형의 예로는 Strings / Arrays / Classes / Interface 등이 있음
         */ 
+
+
+        /*
+            [ 데이터 형변환 ]
+            형변환은 기본 데이터 유형의 값을 다른 유형에 할당하는것
+            Java에는 두 가지 유형의 캐스팅이 있음
+            1.업캐스팅 (자동) 
+            - 더 작은 유형을 더 큰 유형 크기로 변환
+            byte-> short-> char-> int-> long-> float->double
+            2.다운캐스팅 (수동) 
+            - 큰 유형을 작은 크기 유형으로 변환
+            double-> float-> long-> int-> char-> short->byte 
+        */
+
+        // 형변환
+        // 1. 업케스팅 : 자동형 변환
+        System.out.println("[ 업케스팅 ]");
+        int myInt = 9;
+        double myDouble = myInt;
+        System.out.println(myInt);
+        System.out.println(myDouble);
+
+        // 2. 다운케스팅 : 수동형 변환
+        // 타입 변수 = (뱐환타입) 변수
+        System.out.println("[ 다운케스팅 ]");
+        double myDouble2 = 9.78d;
+        int myInt2 = (int)myDouble2;
+        System.out.println(myDouble2);
+        System.out.println(myInt2);
+
     }
 }   
