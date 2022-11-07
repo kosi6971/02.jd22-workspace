@@ -2,5 +2,6 @@
     "java.project.outputPath": "01.JAVA-Root\\JavaDefault\\bin",
     "java.project.sourcePaths": [
         "01.JAVA-Root\\JavaDefault\\src"
-    ]
+    ],
+    "liveServer.settings.port": 5502
 }
